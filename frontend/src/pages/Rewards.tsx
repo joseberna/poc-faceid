@@ -59,7 +59,7 @@ const Rewards = () => {
     try {
       const token = localStorage.getItem('token');
       const response = await axios.post(
-        `http://localhost:3000/api/rewards/${rewardId}/redeem`,
+        `${import.meta.env.VITE_API_URL}/api/rewards/${rewardId}/redeem`,
         {},
         {
           headers: { Authorization: `Bearer ${token}` },

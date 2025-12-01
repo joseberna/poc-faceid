@@ -197,7 +197,7 @@ const VideoPlayer = () => {
     try {
       const token = localStorage.getItem('token');
       const response = await axios.post(
-        `http://localhost:3000/api/videos/${id}/watch`,
+        `${import.meta.env.VITE_API_URL}/api/videos/${id}/watch`,
         {
           completed: percentage >= 90,
           watchedPercentage: percentage,

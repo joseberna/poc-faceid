@@ -49,7 +49,7 @@ const Register = () => {
 
       const descriptorArray = Array.from(detection.descriptor);
 
-      await axios.post('http://localhost:3000/api/auth/register', {
+      await axios.post(import.meta.env.VITE_API_URL + '/api/auth/register', {
         ...formData,
         faceDescriptor: descriptorArray,
       });

@@ -34,7 +34,7 @@ const Dashboard = () => {
 
   const fetchVideos = async (token: string) => {
     try {
-      const response = await axios.get('http://localhost:3000/api/videos', {
+      const response = await axios.get(import.meta.env.VITE_API_URL + '/api/videos', {
         headers: { Authorization: `Bearer ${token}` },
       });
       setVideos(response.data);

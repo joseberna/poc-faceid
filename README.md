@@ -40,7 +40,7 @@ Plataforma web que permite a los usuarios ver videos y ganar puntos mediante ver
 ### 1. Clonar el Repositorio
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/joseberna/poc-faceid
 ```
 
 ### 2. Configurar Backend
