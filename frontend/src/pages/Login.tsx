@@ -1,8 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import Webcam from 'react-webcam';
 import * as faceapi from 'face-api.js';
-import { loadModels, extractDescriptor } from '../services/faceService';
-import { Camera, Mail, Lock, Loader2 } from 'lucide-react';
+import { Camera, Mail, Loader2 } from 'lucide-react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import Logger from '../utils/Logger';
@@ -136,6 +135,11 @@ const Login = () => {
             Position your face within the oval
           </p>
         </div>
+        {error && (
+          <p className="text-red-400 text-sm text-center">
+            {error}
+          </p>
+        )}
 
       </div>
     </div>
