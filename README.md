@@ -244,6 +244,10 @@ npm run build
 
 Este proyecto es privado y confidencial.
 
+## 🔗 Links
+
+- **Live Demo**: [https://poc-faceid.vercel.app/login](https://poc-faceid.vercel.app/login)
+
 ## 👥 Autores
 
 - **Jose Berna** - Desarrollo inicial
